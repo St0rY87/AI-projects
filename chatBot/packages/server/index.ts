@@ -10,11 +10,11 @@ const port = process.env.PORT || 3000;
 app.use(express.json()); //Подключает middleware для автоматического парсинга JSON из тела запроса
 
 app.get("/", (req: Request, res: Response) => {
-  res.send('Hello, World!'); // При GET-запросе на / возвращает текст "Hello, World!"
+  res.send("Hello, World"); // При GET-запросе на / возвращает текст "Hello, World!"
 });
 
 app.get("/api/hello", (req: Request, res: Response) => {
-  res.json({message: 'Hello, World!'});
+  res.json({ message: "Hello, World!!!!!hello" });
 });
 
 app.listen(port, () => {
